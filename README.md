@@ -5,18 +5,18 @@ Checks when a YouTube channel goes live and starts recording the stream when it 
 ## Requirements
 
 * Python 2
-* Streamlink
-* Python Requests
+* [Python Requests](http://docs.python-requests.org/en/master/)
+* [Streamlink](https://github.com/streamlink/streamlink)
 
 ## Installation
 
 ```
-# install streamlink
 pip2 install requests
+pip2 install streamlink
 git clone https://github.com/seymour7/youtube-live-recorder.git
 cd youtube-live-recorder
 cp config.example config
-# edit config
+nano config
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Run:
 curl https://www.googleapis.com/youtube/v3/channels?part=id&forUsername=PewDiePie&key={YOUR_API_KEY}
 ```
 
-Or, go to the channels url (i.e. https://www.youtube.com/user/PewDiePie), right click, view page source and search for 'channelId'
+Or, go to the channel's url (i.e. https://www.youtube.com/user/PewDiePie), right click, view page source and search for 'channelId'.
 
 ### Downloaded video will not play
 
