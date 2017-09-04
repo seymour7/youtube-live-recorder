@@ -7,6 +7,7 @@ Checks when a YouTube channel goes live and starts recording the stream when it 
 * Python 2
 * [Python Requests](http://docs.python-requests.org/en/master/)
 * [Streamlink](https://github.com/streamlink/streamlink)
+* [A YouTube Data API key](https://developers.google.com/youtube/registering_an_application)
 
 ## Installation
 
