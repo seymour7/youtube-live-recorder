@@ -1,24 +1,25 @@
 # YouTube Live Recorder
 
-Checks when a YouTube channel goes live and starts recording the stream when it is live.
+Periodically checks if a YouTube channel is live and starts recording the stream when it is live.
 
 ## Requirements
 
 * Python 2
-* [Python Requests](http://docs.python-requests.org/en/master/)
-* [Streamlink](https://github.com/streamlink/streamlink)
-* [A YouTube Data API key](https://developers.google.com/youtube/registering_an_application)
+* [pip](https://pypi.python.org/pypi/pip)
+* [YouTube Data API key](https://developers.google.com/youtube/registering_an_application)
 
 ## Installation
 
 ```
-pip2 install requests
-pip2 install streamlink
+pip install -r requirements.txt
 git clone https://github.com/seymour7/youtube-live-recorder.git
 cd youtube-live-recorder
 cp config.example config
-nano config
 ```
+
+## Configuration
+
+To configure the app, edit the file `config`
 
 ## Usage
 
@@ -28,7 +29,7 @@ nano config
 
 ## Troubleshooting
 
-### How do I get a channel id?
+### How do I get a channel's id?
 
 Run:
 
@@ -36,7 +37,7 @@ Run:
 curl https://www.googleapis.com/youtube/v3/channels?part=id&forUsername=PewDiePie&key={YOUR_API_KEY}
 ```
 
-Or, go to the channel's url (i.e. https://www.youtube.com/user/PewDiePie), right click, view page source and search for 'channelId'.
+Or, visit the channel's url (i.e. https://www.youtube.com/user/PewDiePie), right click, view page source and search for 'channelId'.
 
 ### Downloaded video will not play
 
