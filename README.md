@@ -46,3 +46,7 @@ Sometimes, if Streamlink ends abruptly, vlc will have problems decoding the vide
 ```
 ffmpeg -i input.mp4 -c copy fixed.mp4
 ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
